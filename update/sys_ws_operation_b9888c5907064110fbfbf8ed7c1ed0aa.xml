@@ -3,10 +3,10 @@
         <active>true</active>
         <consumes>application/json,application/xml,text/xml</consumes>
         <consumes_customized>false</consumes_customized>
-        <default_operation_uri/>
+        <default_operation_uri>/api/x_58872_needit/needit_api/nigetinfo/{user_name}</default_operation_uri>
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>GET</http_method>
-        <name>ni_getinfo</name>
+        <name>ni_getinfo (v2)</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
 // implement resource here
@@ -57,7 +57,7 @@ body.user = {"User name": requestUserName.user_name,
 response.setBody(body);
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_58872_needit/v1/needit_api/nigetinfo/{user_name}</operation_uri>
+        <operation_uri>/api/x_58872_needit/v2/needit_api/nigetinfo/{user_name}</operation_uri>
         <produces>application/json</produces>
         <produces_customized>false</produces_customized>
         <relative_path>/nigetinfo/{user_name}</relative_path>
@@ -68,17 +68,17 @@ response.setBody(body);
         <short_description>Find the active NeedIt records for a user. Group by What needed.</short_description>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-03-02 06:57:50</sys_created_on>
-        <sys_id>08e2eeec07c20110fbfbf8ed7c1ed076</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>ni_getinfo</sys_name>
+        <sys_created_on>2022-03-04 03:38:19</sys_created_on>
+        <sys_id>b9888c5907064110fbfbf8ed7c1ed0aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ni_getinfo (v2)</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
-        <sys_update_name>sys_ws_operation_08e2eeec07c20110fbfbf8ed7c1ed076</sys_update_name>
+        <sys_update_name>sys_ws_operation_b9888c5907064110fbfbf8ed7c1ed0aa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-04 03:22:24</sys_updated_on>
+        <sys_updated_on>2022-03-04 03:38:19</sys_updated_on>
         <web_service_definition display_value="NeedIt API">ba3c522c07c20110fbfbf8ed7c1ed08d</web_service_definition>
-        <web_service_version display_value="v1">0eec6aa807060110fbfbf8ed7c1ed073</web_service_version>
+        <web_service_version display_value="v2">b188089507064110fbfbf8ed7c1ed05d</web_service_version>
     </sys_ws_operation>
 </record_update>
